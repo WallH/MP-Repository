@@ -1,0 +1,96 @@
+object FormRegister: TFormRegister
+  Left = 529
+  Height = 240
+  Top = 206
+  Width = 320
+  Caption = 'Registro'
+  ClientHeight = 240
+  ClientWidth = 320
+  OnCreate = FormCreate
+  LCLVersion = '2.0.10.0'
+  object Label1: TLabel
+    Left = 19
+    Height = 15
+    Top = 28
+    Width = 47
+    Caption = 'Nombre:'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 19
+    Height = 15
+    Top = 56
+    Width = 47
+    Caption = 'Apellido:'
+    ParentColor = False
+  end
+  object inputName: TEdit
+    Left = 96
+    Height = 23
+    Top = 28
+    Width = 184
+    TabOrder = 0
+  end
+  object inputLName: TEdit
+    Left = 96
+    Height = 23
+    Top = 56
+    Width = 184
+    TabOrder = 1
+  end
+  object Label3: TLabel
+    Left = 19
+    Height = 15
+    Top = 84
+    Width = 62
+    Caption = 'Estado civil:'
+    ParentColor = False
+  end
+  object ComboStatus: TComboBox
+    Left = 96
+    Height = 23
+    Top = 84
+    Width = 184
+    ItemHeight = 15
+    Items.Strings = (
+      'Soltero'
+      'Casado'
+      'Viudo'
+    )
+    Style = csDropDownList
+    TabOrder = 2
+  end
+  object Label4: TLabel
+    Left = 19
+    Height = 15
+    Top = 112
+    Width = 39
+    Caption = 'Correo:'
+    ParentColor = False
+  end
+  object inputEmail: TEdit
+    Left = 96
+    Height = 23
+    Top = 112
+    Width = 184
+    TabOrder = 3
+  end
+  object Button1: TButton
+    Left = 29
+    Height = 25
+    Top = 159
+    Width = 75
+    Caption = 'Aceptar'
+    OnClick = Button1Click
+    TabOrder = 4
+  end
+  object Button2: TButton
+    Left = 205
+    Height = 25
+    Top = 160
+    Width = 75
+    Caption = 'Cancelar'
+    OnClick = Button2Click
+    TabOrder = 5
+  end
+end

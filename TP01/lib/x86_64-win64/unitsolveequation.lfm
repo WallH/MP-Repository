@@ -1,0 +1,83 @@
+object FormEquation: TFormEquation
+  Left = 298
+  Height = 269
+  Top = 379
+  Width = 280
+  Caption = 'Raíces'
+  ClientHeight = 269
+  ClientWidth = 280
+  LCLVersion = '2.0.10.0'
+  object Label1: TLabel
+    Left = 15
+    Height = 15
+    Top = 24
+    Width = 53
+    Caption = 'Valor de A'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 108
+    Height = 15
+    Top = 24
+    Width = 52
+    Caption = 'Valor de B'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 209
+    Height = 15
+    Top = 24
+    Width = 53
+    Caption = 'Valor de C'
+    ParentColor = False
+  end
+  object ValueA: TEdit
+    Left = 15
+    Height = 23
+    Top = 44
+    Width = 52
+    NumbersOnly = True
+    TabOrder = 0
+  end
+  object ValueB: TEdit
+    Left = 108
+    Height = 23
+    Top = 44
+    Width = 52
+    NumbersOnly = True
+    TabOrder = 1
+  end
+  object ValueC: TEdit
+    Left = 209
+    Height = 23
+    Top = 44
+    Width = 52
+    NumbersOnly = True
+    TabOrder = 2
+  end
+  object btnSolve: TButton
+    Left = 84
+    Height = 38
+    Top = 87
+    Width = 98
+    Caption = 'Calcular'
+    OnClick = btnSolveClick
+    TabOrder = 3
+  end
+  object Result1: TEdit
+    Left = 16
+    Height = 23
+    Top = 160
+    Width = 51
+    Enabled = False
+    TabOrder = 4
+  end
+  object Result2: TEdit
+    Left = 209
+    Height = 23
+    Top = 160
+    Width = 51
+    Enabled = False
+    TabOrder = 5
+  end
+end
